@@ -1,0 +1,18 @@
+{
+  "name": "ursella-fifo-engine",
+  "version": "0.1.0",
+  "description": "Deterministic FIFO inventory + COGS/margin engine for Ursella. Pure TypeScript, zero dependencies, no database or network access.",
+  "type": "module",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "node --test tests/engine.test.ts tests/ursella-adapter.test.ts",
+    "demo": "node demo/demo.ts"
+  },
+  "engines": {
+    "node": ">=22.6"
+  },
+  "license": "MIT"
+}
