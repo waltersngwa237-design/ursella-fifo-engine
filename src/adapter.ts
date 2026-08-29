@@ -54,9 +54,12 @@ export function buildInput<ProductRow, MovementRow, SaleLineRow>(
 }
 
 // ---------------------------------------------------------------------------
-// EXAMPLE ADAPTER — a plausible Supabase schema. Replace the column names/types
-// below with YOUR actual ones (that's the "field names/types" we asked for).
-// Everything here is illustration; delete it once your real adapter is wired.
+// GENERIC EXAMPLE — kept only to show the shape of an adapter.
+//
+// YOU DO NOT NEED THIS. The live adapter for Ursella's actual tables
+// (products / inventory_transactions / sale_items) is in `ursella-adapter.ts`
+// — use `createUrsellaAdapter()` from there. This block is a reference for
+// mapping some other schema later, and can be deleted.
 // ---------------------------------------------------------------------------
 
 export interface ExampleProductRow {
